@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="13421" started-at="2018-06-01T06:00:12Z" finished-at="2018-06-01T06:00:25Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="13421" started-at="2018-06-01T06:00:12Z" finished-at="2018-06-01T06:00:25Z">
+      <class name="ParametersAnnotation.LoginTest">
+        <test-method status="PASS" signature="launchURL(java.lang.String)[pri:1, instance:ParametersAnnotation.LoginTest@7cd62f43]" name="launchURL" duration-ms="11998" started-at="2018-06-01T06:00:12Z" finished-at="2018-06-01T06:00:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchURL -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:2, instance:ParametersAnnotation.LoginTest@7cd62f43]" name="loginTest" duration-ms="1310" started-at="2018-06-01T06:00:24Z" finished-at="2018-06-01T06:00:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MangoD]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mangodolly]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+      </class> <!-- ParametersAnnotation.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
