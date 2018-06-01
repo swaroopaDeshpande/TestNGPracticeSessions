@@ -13,16 +13,20 @@ public class TestUtil {
 	static Workbook book;
 	static Sheet sheet;
 	
-	public static String TESTDATA_SHEET_PATH = "C:\\Users\\HP\\workspace\\TestNGPracto\\src\\main\\java\\TestData\\LoginTestData.xlsx";
+	public static String TESTDATA_SHEET_PATH = "C:\\Users\\HP\\workspace\\TestNGPracto\\src\\main\\java\\TestData\\HalfEbayTestData.xlsx";
 	
 	//get data from excel:
 	public static Object[][] getDataFromSheet(String sheetName){
+		
+		//To read data 
 		FileInputStream file = null;
 		try {
 			file = new FileInputStream(TESTDATA_SHEET_PATH);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
+		
+		//created XL workbook
 		try {
 			book = WorkbookFactory.create(file);
 		} catch (InvalidFormatException e) {
@@ -30,10 +34,12 @@ public class TestUtil {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
+		//need to get sheet name
 		sheet = book.getSheet(sheetName);
+		//this method return object[][] array
 		Object[][] data = new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
-		// System.out.println(sheet.getLastRowNum() + "--------" +
-		// sheet.getRow(0).getLastCellNum());
+		System.out.println(sheet.getLastRowNum() + "--------" +sheet.getRow(0).getLastCellNum());
 		for (int i = 0; i < sheet.getLastRowNum(); i++) {
 			for (int k = 0; k < sheet.getRow(0).getLastCellNum(); k++) {
 				data[i][k] = sheet.getRow(i + 1).getCell(k).toString();
