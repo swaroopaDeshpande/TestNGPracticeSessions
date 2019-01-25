@@ -2,17 +2,18 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Swaroopa Test Automation Suite">
+
 	<test name="freeCRM App Test cases ">
-	<parameter name="browser" value="chrome"></parameter>
-	<parameter name="username" value="MangoD"></parameter>
-	<parameter name="password" value="Mangodolly"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="username" value="MangoD"></parameter>
+		<parameter name="password" value="Mangodolly"></parameter>
 		<classes>
 			<class name="TestNGFeatures.DependsOnMethodFeature" />
 			<class name="TestNGFeatures.enabledConcept" />
 			<class name="TestNGFeatures.GroupsFeature" />
 			<class name="ParametersAnnotation.LoginTest" />
 			<class name="TestNGData.LoginTest" />
-			
+
 		</classes>
 
 	</test>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Sanity Test Automation Suite">
+
+	<test name="Interview Preparation TestNG">
+		<parameter name="url" value="https://accounts.google.com/ServiceLogin">
+		</parameter>
+		<classes>
+			<class name="TESTNGInterviewPreparation.TestNGAnnotations" />
+			<class name="ParametersAnnotation.GmailLoginTest" />
+		</classes>
+	</test>
+</suite>
